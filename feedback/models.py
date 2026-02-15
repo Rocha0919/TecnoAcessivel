@@ -1,8 +1,9 @@
 from django.db import models
+from django.conf import settings
 from tecnoAcessivel.utils import FEEDBACK_TYPE_CHOICES
 
 class Feedback(models.Model):
-    usuario = models.ForeignKey('user.Usuario', on_delete=models.CASCADE, related_name='feedbacks')
+    usuario = models.ForeignKey(settings.AUTH_USER_MODEL, on_delete=models.CASCADE, related_name='feedbacks')
     tecnologia = models.ForeignKey('assistive_tech.TecnologiaAssistiva', on_delete=models.CASCADE, related_name='feedbacks')
     tipo = models.CharField(max_length=30, choices=FEEDBACK_TYPE_CHOICES, default='avaliacao')
     avaliacao = models.IntegerField(null=True, blank=True)

@@ -1,8 +1,9 @@
 from django.db import models
+from django.conf import settings
 from tecnoAcessivel.utils import RECOMMENDATION_METHOD_CHOICES
 
 class UsuarioFeatureVector(models.Model):
-    usuario = models.OneToOneField('user.Usuario', on_delete=models.CASCADE, primary_key=True)
+    usuario = models.OneToOneField(settings.AUTH_USER_MODEL, on_delete=models.CASCADE, primary_key=True)
     vector = models.JSONField()
     updated_at = models.DateTimeField(auto_now=True)
 
@@ -20,7 +21,7 @@ class TAFeatureVector(models.Model):
 
 
 class RecomendacaoLog(models.Model):
-    usuario = models.ForeignKey('user.Usuario', on_delete=models.CASCADE, related_name='recomendacoes_log')
+    usuario = models.ForeignKey(settings.AUTH_USER_MODEL, on_delete=models.CASCADE, related_name='recomendacoes_log')
     tecnologia = models.ForeignKey('assistive_tech.TecnologiaAssistiva', on_delete=models.CASCADE, related_name='recomendacoes_log')
     snapshot_usuario = models.JSONField()
     score = models.FloatField()
