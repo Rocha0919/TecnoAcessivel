@@ -1,0 +1,532 @@
+[
+{
+    "model": "assistive_tech.deficiencia",
+    "pk": 1,
+    "fields": {
+      "codigo": "CID11-VA",
+      "nome": "Deficiência Visual",
+      "descricao": "Perda total ou parcial da visão"
+    }
+  },
+  {
+    "model": "assistive_tech.deficiencia",
+    "pk": 2,
+    "fields": {
+      "codigo": "CID11-HA",
+      "nome": "Deficiência Auditiva",
+      "descricao": "Perda parcial ou total da audição"
+    }
+  },
+  {
+    "model": "assistive_tech.deficiencia",
+    "pk": 3,
+    "fields": {
+      "codigo": "CID11-MA",
+      "nome": "Deficiência Motora",
+      "descricao": "Limitações de mobilidade"
+    }
+  },
+  {
+    "model": "assistive_tech.deficiencia",
+    "pk": 4,
+    "fields": {
+      "codigo": "CID11-ID",
+      "nome": "Deficiência Intelectual",
+      "descricao": "Limitações cognitivas e adaptativas"
+    }
+  },
+  {
+    "model": "assistive_tech.deficiencia",
+    "pk": 5,
+    "fields": {
+      "codigo": "CID11-ASD",
+      "nome": "Transtorno do Espectro Autista",
+      "descricao": "Condição do neurodesenvolvimento"
+    }
+  },
+
+  {
+    "model": "assistive_tech.incapacidadefuncional",
+    "pk": 1,
+    "fields": {
+      "nome": "Dificuldade de Leitura",
+      "descricao": ""
+    }
+  },
+  {
+    "model": "assistive_tech.incapacidadefuncional",
+    "pk": 2,
+    "fields": {
+      "nome": "Dificuldade de Comunicação Oral",
+      "descricao": ""
+    }
+  },
+  {
+    "model": "assistive_tech.incapacidadefuncional",
+    "pk": 3,
+    "fields": {
+      "nome": "Baixa Coordenação Motora Fina",
+      "descricao": ""
+    }
+  },
+  {
+    "model": "assistive_tech.incapacidadefuncional",
+    "pk": 4,
+    "fields": {
+      "nome": "Sensibilidade Sensorial",
+      "descricao": ""
+    }
+  },
+  {
+    "model": "assistive_tech.incapacidadefuncional",
+    "pk": 5,
+    "fields": {
+      "nome": "Dificuldade de Atenção",
+      "descricao": ""
+    }
+  },
+
+  {
+    "model": "assistive_tech.preferencia",
+    "pk": 1,
+    "fields": {
+      "chave": "alto_contraste",
+      "nome": "Alto Contraste",
+      "descricao": "Interface com alto contraste visual"
+    }
+  },
+  {
+    "model": "assistive_tech.preferencia",
+    "pk": 2,
+    "fields": {
+      "chave": "leitor_tela",
+      "nome": "Leitor de Tela",
+      "descricao": "Compatibilidade com leitores de tela"
+    }
+  },
+  {
+    "model": "assistive_tech.preferencia",
+    "pk": 3,
+    "fields": {
+      "chave": "comandos_voz",
+      "nome": "Comandos por Voz",
+      "descricao": "Interação por comandos de voz"
+    }
+  },
+  {
+    "model": "assistive_tech.preferencia",
+    "pk": 4,
+    "fields": {
+      "chave": "interface_simples",
+      "nome": "Interface Simplificada",
+      "descricao": "Layout com menos estímulos"
+    }
+  },
+  {
+    "model": "assistive_tech.preferencia",
+    "pk": 5,
+    "fields": {
+      "chave": "feedback_sonoro",
+      "nome": "Feedback Sonoro",
+      "descricao": "Sons para ações e alertas"
+    }
+  },
+
+  {
+    "model": "assistive_tech.plataforma",
+    "pk": 1,
+    "fields": { "nome": "Android" }
+  },
+  {
+    "model": "assistive_tech.plataforma",
+    "pk": 2,
+    "fields": { "nome": "iOS" }
+  },
+  {
+    "model": "assistive_tech.plataforma",
+    "pk": 3,
+    "fields": { "nome": "Windows" }
+  },
+  {
+    "model": "assistive_tech.plataforma",
+    "pk": 4,
+    "fields": { "nome": "Linux" }
+  },
+  {
+    "model": "assistive_tech.plataforma",
+    "pk": 5,
+    "fields": { "nome": "Web" }
+  },
+
+
+  {
+    "model": "assistive_tech.contextouso",
+    "pk": 1,
+    "fields": { "nome": "Educacional" }
+  },
+  {
+    "model": "assistive_tech.contextouso",
+    "pk": 2,
+    "fields": { "nome": "Profissional" }
+  },
+  {
+    "model": "assistive_tech.contextouso",
+    "pk": 3,
+    "fields": { "nome": "Doméstico" }
+  },
+  {
+    "model": "assistive_tech.contextouso",
+    "pk": 4,
+    "fields": { "nome": "Reabilitação" }
+  },
+  {
+    "model": "assistive_tech.contextouso",
+    "pk": 5,
+    "fields": { "nome": "Lazer" }
+  },
+
+  {
+    "model": "assistive_tech.tecnologiaassistiva",
+    "pk": 100,
+    "fields": {
+      "nome": "NVDA",
+      "slug": "nvda",
+      "descricao": "Leitor de tela gratuito e de código aberto para Windows.",
+      "tipo": "software",
+      "licenca": "open-source",
+      "nivel_complexidade": "medio",
+      "possui_video": true,
+      "ativo": true,
+      "data_importacao": "2025-01-15T10:00:00Z",
+      "data_atualizacao": "2025-01-15T10:00:00Z"
+    }
+  },
+  {
+    "model": "assistive_tech.tecnologiaassistiva",
+    "pk": 101,
+    "fields": {
+      "nome": "VLibras",
+      "slug": "vlibras",
+      "descricao": "Ferramenta de tradução automática para Libras.",
+      "tipo": "software",
+      "licenca": "gratuito",
+      "nivel_complexidade": "baixo",
+      "possui_video": true,
+      "ativo": true,
+      "data_importacao": "2025-01-15T10:00:00Z",
+      "data_atualizacao": "2025-01-15T10:00:00Z"
+    }
+  },
+  {
+    "model": "assistive_tech.tecnologiaassistiva",
+    "pk": 102,
+    "fields": {
+      "nome": "Teclado Ampliado USB",
+      "slug": "teclado-ampliado-usb",
+      "descricao": "Teclado com teclas maiores para baixa visão e acessibilidade.",
+      "tipo": "hardware",
+      "licenca": "pago",
+      "nivel_complexidade": "baixo",
+      "custo_estimado": "250.00",
+      "possui_video": false,
+      "ativo": true,
+      "data_importacao": "2025-01-15T10:00:00Z",
+      "data_atualizacao": "2025-01-15T10:00:00Z"
+    }
+  },
+  {
+    "model": "assistive_tech.tecnologiaassistiva",
+    "pk": 103,
+    "fields": {
+      "nome": "Proloquo2Go",
+      "slug": "proloquo2go",
+      "descricao": "Aplicativo de comunicação aumentativa por símbolos.",
+      "tipo": "software",
+      "licenca": "pago",
+      "nivel_complexidade": "alto",
+      "custo_estimado": "1200.00",
+      "possui_video": true,
+      "ativo": true,
+      "data_importacao": "2025-01-15T10:00:00Z",
+      "data_atualizacao": "2025-01-15T10:00:00Z"
+    }
+  },
+  {
+    "model": "assistive_tech.tecnologiaassistiva",
+    "pk": 104,
+    "fields": {
+      "nome": "Mouse Trackball Adaptado",
+      "slug": "mouse-trackball-adaptado",
+      "descricao": "Mouse trackball adaptado para mobilidade reduzida.",
+      "tipo": "hardware",
+      "licenca": "pago",
+      "nivel_complexidade": "medio",
+      "custo_estimado": "400.00",
+      "possui_video": false,
+      "ativo": true,
+      "data_importacao": "2025-01-15T10:00:00Z",
+      "data_atualizacao": "2025-01-15T10:00:00Z"
+    }
+  },
+
+  {
+    "model": "user.usuario",
+    "pk": 200,
+    "fields": {
+      "username": "admin_seed",
+      "password": "pbkdf2_sha256$260000$adminseed$XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+      "is_superuser": true,
+      "is_staff": true,
+      "is_active": true,
+      "atualizado_em": "2026-02-25T01:26:32Z"
+    }
+  },
+  {
+    "model": "user.usuario",
+    "pk": 201,
+    "fields": {
+      "username": "usuario_a",
+      "password": "pbkdf2_sha256$260000$usera$YYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYY",
+      "is_active": true,
+      "atualizado_em": "2026-02-25T01:26:32Z"
+    }
+  },
+  {
+    "model": "user.usuario",
+    "pk": 202,
+    "fields": {
+      "username": "usuario_b",
+      "password": "pbkdf2_sha256$260000$userb$ZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZ",
+      "is_active": true,
+      "atualizado_em": "2026-02-25T01:26:32Z"
+    }
+  },
+  {
+    "model": "user.usuario",
+    "pk": 203,
+    "fields": {
+      "username": "usuario_c",
+      "password": "pbkdf2_sha256$260000$userc$AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+      "is_active": true,
+      "atualizado_em": "2026-02-25T01:26:32Z"
+    }
+  },
+  {
+    "model": "user.usuario",
+    "pk": 204,
+    "fields": {
+      "username": "usuario_d",
+      "password": "pbkdf2_sha256$260000$userd$BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB",
+      "is_active": true,
+      "atualizado_em": "2026-02-25T01:26:32Z"
+    }
+  },
+
+  {
+    "model": "assistive_tech.ta_deficiencia",
+    "pk": 300,
+    "fields": { "tecnologia": 100, "deficiencia": 1 }
+  },
+  {
+    "model": "assistive_tech.ta_deficiencia",
+    "pk": 301,
+    "fields": { "tecnologia": 101, "deficiencia": 2 }
+  },
+  {
+    "model": "assistive_tech.ta_deficiencia",
+    "pk": 302,
+    "fields": { "tecnologia": 102, "deficiencia": 3 }
+  },
+  {
+    "model": "assistive_tech.ta_deficiencia",
+    "pk": 303,
+    "fields": { "tecnologia": 103, "deficiencia": 4 }
+  },
+  {
+    "model": "assistive_tech.ta_deficiencia",
+    "pk": 304,
+    "fields": { "tecnologia": 104, "deficiencia": 5 }
+  },
+
+  {
+    "model": "assistive_tech.ta_incapacidade",
+    "pk": 310,
+    "fields": { "tecnologia": 100, "incapacidade": 1 }
+  },
+  {
+    "model": "assistive_tech.ta_incapacidade",
+    "pk": 311,
+    "fields": { "tecnologia": 101, "incapacidade": 2 }
+  },
+  {
+    "model": "assistive_tech.ta_incapacidade",
+    "pk": 312,
+    "fields": { "tecnologia": 102, "incapacidade": 3 }
+  },
+  {
+    "model": "assistive_tech.ta_incapacidade",
+    "pk": 313,
+    "fields": { "tecnologia": 103, "incapacidade": 4 }
+  },
+  {
+    "model": "assistive_tech.ta_incapacidade",
+    "pk": 314,
+    "fields": { "tecnologia": 104, "incapacidade": 5 }
+  },
+
+  {
+    "model": "assistive_tech.ta_plataforma",
+    "pk": 320,
+    "fields": { "tecnologia": 100, "plataforma": 1 }
+  },
+  {
+    "model": "assistive_tech.ta_plataforma",
+    "pk": 321,
+    "fields": { "tecnologia": 101, "plataforma": 2 }
+  },
+  {
+    "model": "assistive_tech.ta_plataforma",
+    "pk": 322,
+    "fields": { "tecnologia": 102, "plataforma": 3 }
+  },
+  {
+    "model": "assistive_tech.ta_plataforma",
+    "pk": 323,
+    "fields": { "tecnologia": 103, "plataforma": 5 }
+  },
+  {
+    "model": "assistive_tech.ta_plataforma",
+    "pk": 324,
+    "fields": { "tecnologia": 104, "plataforma": 4 }
+  },
+
+  {
+    "model": "assistive_tech.ta_contexto",
+    "pk": 330,
+    "fields": { "tecnologia": 100, "contexto": 1 }
+  },
+  {
+    "model": "assistive_tech.ta_contexto",
+    "pk": 331,
+    "fields": { "tecnologia": 101, "contexto": 2 }
+  },
+  {
+    "model": "assistive_tech.ta_contexto",
+    "pk": 332,
+    "fields": { "tecnologia": 102, "contexto": 3 }
+  },
+  {
+    "model": "assistive_tech.ta_contexto",
+    "pk": 333,
+    "fields": { "tecnologia": 103, "contexto": 4 }
+  },
+  {
+    "model": "assistive_tech.ta_contexto",
+    "pk": 334,
+    "fields": { "tecnologia": 104, "contexto": 5 }
+  },
+
+  {
+    "model": "user.usuario_deficiencia",
+    "pk": 400,
+    "fields": { "usuario": 201, "deficiencia": 1 }
+  },
+  {
+    "model": "user.usuario_deficiencia",
+    "pk": 401,
+    "fields": { "usuario": 202, "deficiencia": 2 }
+  },
+  {
+    "model": "user.usuario_deficiencia",
+    "pk": 402,
+    "fields": { "usuario": 203, "deficiencia": 3 }
+  },
+  {
+    "model": "user.usuario_deficiencia",
+    "pk": 403,
+    "fields": { "usuario": 204, "deficiencia": 4 }
+  },
+  {
+    "model": "user.usuario_deficiencia",
+    "pk": 404,
+    "fields": { "usuario": 200, "deficiencia": 5 }
+  },
+
+  {
+    "model": "user.usuario_incapacidade",
+    "pk": 410,
+    "fields": { "usuario": 201, "incapacidade": 1, "grau": "moderado", "observacao": "" }
+  },
+  {
+    "model": "user.usuario_incapacidade",
+    "pk": 411,
+    "fields": { "usuario": 202, "incapacidade": 2, "grau": "moderado", "observacao": "" }
+  },
+  {
+    "model": "user.usuario_incapacidade",
+    "pk": 412,
+    "fields": { "usuario": 203, "incapacidade": 3, "grau": "moderado", "observacao": "" }
+  },
+  {
+    "model": "user.usuario_incapacidade",
+    "pk": 413,
+    "fields": { "usuario": 204, "incapacidade": 4, "grau": "moderado", "observacao": "" }
+  },
+  {
+    "model": "user.usuario_incapacidade",
+    "pk": 414,
+    "fields": { "usuario": 200, "incapacidade": 5, "grau": "moderado", "observacao": "" }
+  },
+
+  {
+    "model": "user.usuario_plataforma",
+    "pk": 420,
+    "fields": { "usuario": 201, "plataforma": 1 }
+  },
+  {
+    "model": "user.usuario_plataforma",
+    "pk": 421,
+    "fields": { "usuario": 202, "plataforma": 2 }
+  },
+  {
+    "model": "user.usuario_plataforma",
+    "pk": 422,
+    "fields": { "usuario": 203, "plataforma": 3 }
+  },
+  {
+    "model": "user.usuario_plataforma",
+    "pk": 423,
+    "fields": { "usuario": 204, "plataforma": 4 }
+  },
+  {
+    "model": "user.usuario_plataforma",
+    "pk": 424,
+    "fields": { "usuario": 200, "plataforma": 5 }
+  },
+
+  {
+    "model": "user.usuario_preferencia",
+    "pk": 430,
+    "fields": { "usuario": 201, "preferencia": 1, "valor": "" }
+  },
+  {
+    "model": "user.usuario_preferencia",
+    "pk": 431,
+    "fields": { "usuario": 202, "preferencia": 2, "valor": "" }
+  },
+  {
+    "model": "user.usuario_preferencia",
+    "pk": 432,
+    "fields": { "usuario": 203, "preferencia": 3, "valor": "" }
+  },
+  {
+    "model": "user.usuario_preferencia",
+    "pk": 433,
+    "fields": { "usuario": 204, "preferencia": 4, "valor": "" }
+  },
+  {
+    "model": "user.usuario_preferencia",
+    "pk": 434,
+    "fields": { "usuario": 200, "preferencia": 5, "valor": "" }
+  }
+]

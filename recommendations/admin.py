@@ -1,3 +1,6 @@
 from django.contrib import admin
+from .models import UsuarioFeatureVector, TAFeatureVector, RecomendacaoLog
 
-# Register your models here.
+admin.site.register(UsuarioFeatureVector)
+admin.site.register(TAFeatureVector)
+admin.site.register(RecomendacaoLog)
